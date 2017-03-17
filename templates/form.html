@@ -1,0 +1,25 @@
+<form>
+  <fieldset>
+    <legend>{{ textButton }}</legend>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <label>Tarea</label>
+        <input type="text" placeholder="Tarea" ng-model="usuario.tarea" required>
+      </div>
+      <div class="large-6 columns">
+        <label>Fecha Entrega</label>
+        <input type="date" placeholder="Fecha Entrega" ng-model="usuario.fecha_entrega" required>
+      </div>
+      <div class="large-12 columns">
+        <div class="row collapse">
+          <label>Web</label>
+            <!-- <input type="url" placeholder="Web" ng-model="usuario.web" required> -->
+            <textarea placeholder="Descripción" ng-model="usuario.descripcion" style="max-height: 250px; height: 200px"></textarea>
+        </div>
+      </div>
+    </div>
+    <button type="submit"  class="button large-12">{{ textButton }}</button>
+     <a href="#/" class="button large-12 success">Volver al inicio</a>
+  </fieldset>
+</form>
